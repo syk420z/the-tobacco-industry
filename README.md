@@ -1,4 +1,4 @@
-# The Baccy 🌱
+# The Tobacco Industry🌱
 
 A DarkRP tobacco production addon for Garry's Mod.
 
