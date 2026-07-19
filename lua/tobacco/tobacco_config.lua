@@ -1,5 +1,6 @@
 TobaccoConfig = TobaccoConfig or {}
 
+TobaccoConfig.DrawDistance = 256
 
 -- ======================================
 -- Raw Materials

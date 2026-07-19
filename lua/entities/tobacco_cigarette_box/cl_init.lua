@@ -5,6 +5,8 @@ function ENT:Draw()
 
     if not IsValid(LocalPlayer()) then return end
 
+    if LocalPlayer():GetPos():Distance(self:GetPos()) > TobaccoConfig.DrawDistance then return end
+
     local speed = 3
     local amplitude = 1
     local bobbing = math.sin(CurTime() * speed) * amplitude

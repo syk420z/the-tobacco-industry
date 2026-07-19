@@ -49,6 +49,36 @@ end
 
 
 
+function ENT:GetOutputBox()
+
+    local outputPos =
+        self:GetPos()
+        + self:GetForward() * 25
+        + Vector(0,0,10)
+
+
+    local found = ents.FindInSphere(outputPos, 20)
+
+
+    for _, ent in ipairs(found) do
+
+        if ent:GetClass() == "tobacco_cigar_carton" then
+
+            if ent:GetAmount() < TobaccoConfig.CigarCartonMax then
+                return ent
+            end
+
+        end
+
+    end
+
+
+    return nil
+
+end
+
+
+
 function ENT:StartTouch(ent)
 
     if not IsValid(ent) then return end
@@ -171,24 +201,42 @@ function ENT:StartRolling()
 
 
 
-        local cigar = ents.Create("tobacco_cigar")
+        local box = self:GetOutputBox()
 
 
-        if IsValid(cigar) then
 
-            cigar:SetPos(
-                self:GetPos()
-                + self:GetForward() * 25
-                + Vector(0,0,10)
+        if IsValid(box) then
+
+
+            box:SetAmount(
+                box:GetAmount() + 1
             )
 
 
-            cigar:SetAngles(
-                self:GetAngles()
-            )
+        else
 
 
-            cigar:Spawn()
+            local cigar = ents.Create("tobacco_cigar")
+
+
+            if IsValid(cigar) then
+
+                cigar:SetPos(
+                    self:GetPos()
+                    + self:GetForward() * 25
+                    + Vector(0,0,10)
+                )
+
+
+                cigar:SetAngles(
+                    self:GetAngles()
+                )
+
+
+                cigar:Spawn()
+
+            end
+
 
         end
 

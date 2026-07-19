@@ -25,7 +25,7 @@ concommand.Add("tobacco_removebuyers", function(ply)
             Color(120,80,40),
             "Tobacco Industry: ",
             Color(255,255,255),
-            "Removed all buyers."
+            "Removed all buyer data."
         )
     end
 

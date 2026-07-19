@@ -27,6 +27,8 @@ function ENT:Draw()
 
     if not IsValid(LocalPlayer()) then return end
 
+    if LocalPlayer():GetPos():Distance(self:GetPos()) > TobaccoConfig.DrawDistance then return end
+
     local pos = self:LocalToWorld(Vector(0, 0, 40))
     local ang = Angle(0, LocalPlayer():EyeAngles().y - 90, 90)
 
