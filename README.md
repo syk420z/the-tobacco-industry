@@ -12,7 +12,7 @@ A DarkRP tobacco production addon for Garry's Mod.
 
 ## Open Source
 
-📚 This addon is open source. Feel free to fork it, learn from it, improve it, or adapt it for your own projects. Please don't reupload this repository or claim the original work as your own.
+📚 This addon is open source. Feel free to fork it, learn from it, or adapt it for your own projects. Please don't reupload this repository or claim the original work as your own.
 
 ## Useful Information
 
