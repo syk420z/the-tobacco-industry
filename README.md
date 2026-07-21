@@ -5,7 +5,7 @@ A DarkRP tobacco production addon for Garry's Mod.
 # Features
 
 🪴 Build your own tobacco operation:
-- Process leaves into cured tobacco
+- Grow tobacco plants and process leaves into cured tobacco
 - Produce cigars and cigarettes
 - Package shipments
 - Sell products to buyers
@@ -16,5 +16,7 @@ A DarkRP tobacco production addon for Garry's Mod.
 
 ⚠️ This addon is currently a work in progress.
 Features, balance, and content may change during development.
+
+📄 Config is located at: `lua/tobacco/tobacco_config.lua`
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=3767479466
