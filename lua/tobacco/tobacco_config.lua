@@ -12,6 +12,14 @@ TobaccoConfig.MaxPropylene = 25
 TobaccoConfig.LeavesPerBox = 25
 TobaccoConfig.PropylenePerJug = 5
 
+-- ======================================
+-- Farming
+-- ======================================
+
+TobaccoConfig.WaterPerBottle = 10
+TobaccoConfig.MaxWater = 100
+
+TobaccoConfig.WaterDrainPerCycle = math.random(5, 8)
 
 -- ======================================
 -- Processing

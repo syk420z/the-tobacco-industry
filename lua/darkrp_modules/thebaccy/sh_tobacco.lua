@@ -51,6 +51,36 @@ DarkRP.createCategory {
 -- Entities
 --=====================================================
 
+DarkRP.createEntity("Clay Pot", {
+    ent = "tobacco_plant_pot",
+    cmd = "buyclaypot",
+    model = "models/thebaccy/clay_pot.mdl",
+    price = 250,
+    max = 4,
+    category = "Tobacco",
+    allowed = TEAM_TOBACCO
+})
+
+DarkRP.createEntity("Tobacco Seed", {
+    ent = "tobacco_plant_seed",
+    cmd = "buytobaccoseed",
+    model = "models/props_junk/garbage_bag001a.mdl",
+    price = 25,
+    max = 4,
+    category = "Tobacco",
+    allowed = TEAM_TOBACCO
+})
+
+DarkRP.createEntity("Water", {
+    ent = "tobacco_plant_water",
+    cmd = "buywater",
+    model = "models/props_junk/garbage_plasticbottle003a.mdl",
+    price = 50,
+    max = 8,
+    category = "Tobacco",
+    allowed = TEAM_TOBACCO
+})
+
 DarkRP.createEntity("Cigar Tray", {
     ent = "tobacco_cigar_tray",
     cmd = "buycigartray",
@@ -60,7 +90,6 @@ DarkRP.createEntity("Cigar Tray", {
     category = "Tobacco",
     allowed = TEAM_TOBACCO
 })
-
 
 DarkRP.createEntity("Cigarette Roller", {
     ent = "tobacco_roller",
@@ -72,18 +101,6 @@ DarkRP.createEntity("Cigarette Roller", {
     allowed = TEAM_TOBACCO
 })
 
-
-DarkRP.createEntity("Fresh Leaves", {
-    ent = "tobacco_box_fresh",
-    cmd = "buyfreshleaves",
-    model = "models/thebaccy/tobacco_box_fresh.mdl",
-    price = 100,
-    max = 4,
-    category = "Tobacco",
-    allowed = TEAM_TOBACCO
-})
-
-
 DarkRP.createEntity("Propylene Glycol", {
     ent = "tobacco_propylene",
     cmd = "buypropylene",
@@ -93,7 +110,6 @@ DarkRP.createEntity("Propylene Glycol", {
     category = "Tobacco",
     allowed = TEAM_TOBACCO
 })
-
 
 DarkRP.createEntity("Filter Tubes", {
     ent = "tobacco_filters",
@@ -105,7 +121,6 @@ DarkRP.createEntity("Filter Tubes", {
     allowed = TEAM_TOBACCO
 })
 
-
 DarkRP.createEntity("Leaf Grinder", {
     ent = "tobacco_grinder",
     cmd = "buytobaccogrinder",
@@ -115,7 +130,6 @@ DarkRP.createEntity("Leaf Grinder", {
     category = "Tobacco",
     allowed = TEAM_TOBACCO
 })
-
 
 DarkRP.createEntity("Tobacco Processor", {
     ent = "tobacco_processor",
@@ -127,7 +141,6 @@ DarkRP.createEntity("Tobacco Processor", {
     allowed = TEAM_TOBACCO
 })
 
-
 DarkRP.createEntity("Cigar Box", {
     ent = "tobacco_cigar_carton",
     cmd = "buycigarbox",
@@ -137,7 +150,6 @@ DarkRP.createEntity("Cigar Box", {
     category = "Tobacco",
     allowed = TEAM_TOBACCO
 })
-
 
 DarkRP.createEntity("Cigarette Box", {
     ent = "tobacco_cigarette_box",
@@ -149,7 +161,6 @@ DarkRP.createEntity("Cigarette Box", {
     allowed = TEAM_TOBACCO
 })
 
-
 DarkRP.createEntity("Shipping Box", {
     ent = "tobacco_shipping_box",
     cmd = "buyshippingbox",
@@ -159,7 +170,6 @@ DarkRP.createEntity("Shipping Box", {
     category = "Tobacco",
     allowed = TEAM_TOBACCO
 })
-
 
 DarkRP.createEntity("Shipping Pallet", {
     ent = "tobacco_shipping_pallete",
