@@ -2,8 +2,15 @@ AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 
+local cigaretteModels = {
+    "models/thebaccy/cigarette_packet.mdl",
+    "models/thebaccy/cigarette_packet_camel.mdl",
+    "models/thebaccy/cigarette_packet_marlboro.mdl",
+    "models/thebaccy/cigarette_packet_menthol.mdl"
+}
+
 function ENT:Initialize()
-    self:SetModel("models/thebaccy/cigarette_packet.mdl")
+    self:SetModel(table.Random(cigaretteModels))
     self:PhysicsInit(SOLID_VPHYSICS)
     self:SetMoveType(MOVETYPE_VPHYSICS)
     self:SetSolid(SOLID_VPHYSICS)
