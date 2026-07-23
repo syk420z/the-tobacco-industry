@@ -29,7 +29,8 @@ function ENT:Initialize()
     self.plant = ents.Create("prop_dynamic")
 
     if IsValid(self.plant) then
-        self.plant:SetModel("models/props_foliage/cedar_medium01_skybox.mdl")
+        self.plant:SetModel("models/perftest/grass_tuft_004b.mdl")
+        self.plant:SetColor(Color(67,148,20))
         self.plant:SetParent(self)
         self.plant:SetPos(self:LocalToWorld(Vector(0, 0, 0)))
         self.plant:SetAngles(self:GetAngles())
